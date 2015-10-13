@@ -1,0 +1,25 @@
+
+
+dependencies {
+	compile ':commons-cli:1.2'
+	compile ':commons-codec:1.8'
+	compile ':commons-lang:2.6'
+	
+	compile ':commons-io:2.4'
+	compile ':hadoop-auth:V100R001C00'
+	compile ':hadoop-common:V100R001C00'
+	compile ':hadoop-hdfs:V100R001C00'
+	compile ':jersey-client:1.11'
+	compile ':jersey-core:1.11'
+	compile ':json-simple:1.1'
+	
+	compile ':log4j:1.2.16'
+	compile ':slf4j-api:1.6.1'
+	compile ':slf4j-log4j12:1.6.1'
+	compile ':sqoop-client-2.0.0:SNAPSHOT'
+	
+	compile ':sqoop-common-2.0.0:SNAPSHOT'
+	compile ':wc2frm:2.1.5'
+	
+	testCompile ':junit:4.11'
+}

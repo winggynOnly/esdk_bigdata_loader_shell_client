@@ -1,0 +1,46 @@
+File configFile = new File("D:/build/temp.txt")
+String ciFlag;
+if (configFile.exists()) {
+	ciFlag = configFile.getText();
+}
+if ("Y" == ciFlag) {
+	ext.tempDir = file("$project.projectDir/../../../../..").absolutePath
+	ext.esdkSrcRootDir = file("$project.projectDir/..").absolutePath
+
+	apply from: "$tempDir/eSDK_Platform_V1R5_Server/code/current/eSDK_Platform_V100R005/Server/source/esdk_tools/release_package/common_methods.gradle"
+
+	allprojects {
+		apply from: "$tempDir/eSDK_Platform_V1R5_Server/code/current/eSDK_Platform_V100R005/Server/source/esdk_tools/release_package/common_allprojects.gradle"
+	}
+	subprojects {
+		apply from: "$tempDir/eSDK_Platform_V1R5_Server/code/current/eSDK_Platform_V100R005/Server/source/esdk_tools/release_package/common_subprojects.gradle"
+		
+		repositories {
+			flatDir { dirs "$esdkSrcRootDir/platform/FusionInsight V100R002C30B070" }  
+		}
+	}
+}
+else {
+	ext.esdkSrcRootDir = file("$project.projectDir/..").absolutePath
+
+	apply from: "$esdkSrcRootDir/eSDK_Platform_V100R005/Server/source/esdk_tools/release_package/common_methods.gradle"
+
+	allprojects {
+		apply from: "$esdkSrcRootDir/eSDK_Platform_V100R005/Server/source/esdk_tools/release_package/common_allprojects.gradle"
+	}
+	subprojects {
+		apply from: "$esdkSrcRootDir/eSDK_Platform_V100R005/Server/source/esdk_tools/release_package/common_subprojects.gradle"
+		
+		repositories {
+			flatDir { dirs "$esdkSrcRootDir/platform/FusionInsight V100R002C30B070" } 
+		}
+	}
+}
+
+def addDependentProject(proj, cfg, jarOrProjName) {
+	if (proj.rootProject.findProject(jarOrProjName) != null) {
+		 proj.dependencies.add(cfg, this.project(":$jarOrProjName"))
+	} else {
+		proj.dependencies.add(cfg, ":$jarOrProjName")
+	}
+}

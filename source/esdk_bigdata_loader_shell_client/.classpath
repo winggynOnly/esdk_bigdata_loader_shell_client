@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="main/java/|main/resources/|test/resources/|test/java/" kind="src" path="src"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="src" path="src/test/resources"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="F:/eSDKSVN/code/eSDK_Solution_V100R005/trunk/eSDK_ BigData_V100R005/platform/FusionInsight V100R002C30B070/sqoop-client-2.0.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="F:/eSDKSVN/code/eSDK_Solution_V100R005/trunk/eSDK_ BigData_V100R005/platform/FusionInsight V100R002C30B070/sqoop-common-2.0.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="F:/eSDKSVN/code/eSDK_Solution_V100R005/trunk/eSDK_ BigData_V100R005/open_src/commons-cli-1.2.jar"/>
+	<classpathentry kind="lib" path="F:/eSDKSVN/code/eSDK_Solution_V100R005/trunk/eSDK_ BigData_V100R005/open_src/commons-codec-1.8.jar"/>
+	<classpathentry kind="lib" path="F:/eSDKSVN/code/eSDK_Solution_V100R005/trunk/eSDK_ BigData_V100R005/open_src/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="F:/eSDKSVN/code/eSDK_Solution_V100R005/trunk/eSDK_ BigData_V100R005/open_src/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="F:/eSDKSVN/code/eSDK_Solution_V100R005/trunk/eSDK_ BigData_V100R005/open_src/jersey-client-1.11.jar"/>
+	<classpathentry kind="lib" path="F:/eSDKSVN/code/eSDK_Solution_V100R005/trunk/eSDK_ BigData_V100R005/open_src/jersey-core-1.11.jar"/>
+	<classpathentry kind="lib" path="F:/eSDKSVN/code/eSDK_Solution_V100R005/trunk/eSDK_ BigData_V100R005/open_src/json-simple-1.1.jar"/>
+	<classpathentry kind="lib" path="F:/eSDKSVN/code/eSDK_Solution_V100R005/trunk/eSDK_ BigData_V100R005/open_src/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="F:/eSDKSVN/code/eSDK_Solution_V100R005/trunk/eSDK_ BigData_V100R005/open_src/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="F:/eSDKSVN/code/eSDK_Solution_V100R005/trunk/eSDK_ BigData_V100R005/open_src/slf4j-log4j12-1.6.1.jar"/>
+	<classpathentry kind="lib" path="F:/eSDKSVN/code/eSDK_Solution_V100R005/trunk/eSDK_ BigData_V100R005/open_src/wc2frm-2.1.5.jar"/>
+	<classpathentry kind="lib" path="F:/eSDKSVN/code/eSDK_Solution_V100R005/trunk/eSDK_ BigData_V100R005/platform/FusionInsight V100R002C30B070/hadoop-auth-V100R001C00.jar"/>
+	<classpathentry kind="lib" path="F:/eSDKSVN/code/eSDK_Solution_V100R005/trunk/eSDK_ BigData_V100R005/platform/FusionInsight V100R002C30B070/hadoop-common-V100R001C00.jar"/>
+	<classpathentry kind="lib" path="F:/eSDKSVN/code/eSDK_Solution_V100R005/trunk/eSDK_ BigData_V100R005/platform/FusionInsight V100R002C30B070/hadoop-hdfs-V100R001C00.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
