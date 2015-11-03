@@ -1,2 +1,2 @@
 # esdk_bigdata_loader_shell_client
-esdk_bigdata_loader_shell_client
+开放华为大数据loader命令行，与大数据设备强绑定
